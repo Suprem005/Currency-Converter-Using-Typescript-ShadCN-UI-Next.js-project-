@@ -18,6 +18,7 @@ import { Formik } from 'formik';
 import { useRouter } from 'next/navigation';
 
 import React, { useEffect, useState } from 'react';
+import History from '../history/page';
 
 type CurrencyMap = Record<string, string>;
 
@@ -71,6 +72,7 @@ const Converter = () => {
       );
       const updated = [...existing, conversionData];
       localStorage.setItem('conversionHistory', JSON.stringify(updated));
+      <History/>
     },
   });
   return (
@@ -156,7 +158,7 @@ const Converter = () => {
                   Convert
                 </Button>
               </div>
-              
+
             </div>
           </form>
         )}
