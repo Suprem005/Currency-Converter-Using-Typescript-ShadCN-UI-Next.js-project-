@@ -1,11 +1,9 @@
-import React from 'react';
-import Converter from './converter/page';
-import History from './history/page';
+import Home from './home/page';
 
 const Hello = () => {
   return (
     <div>
-      <Converter />
+      <Home />
     </div>
   );
 };

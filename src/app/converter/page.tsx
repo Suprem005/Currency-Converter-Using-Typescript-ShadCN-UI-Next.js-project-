@@ -72,7 +72,7 @@ const Converter = () => {
       );
       const updated = [...existing, conversionData];
       localStorage.setItem('conversionHistory', JSON.stringify(updated));
-      <History/>
+      <History />;
     },
   });
   return (
@@ -158,7 +158,6 @@ const Converter = () => {
                   Convert
                 </Button>
               </div>
-
             </div>
           </form>
         )}
